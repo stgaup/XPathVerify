@@ -4,7 +4,7 @@ Usage:
 XPathVerify.exe [RootPath] [XPath] [IsMissing]  
 
 RootPath - Where in the file system to start looking.  
-XPath - The XPath of the element to look for.
+XPath - The XPath of the element to look for.  
 IsMissing (y/n) (optional) - Only output the files that are missing? If omitted, all files will be listed with an indication of wether or not they contain the xml element which the XPath is pointing to.
 
 
