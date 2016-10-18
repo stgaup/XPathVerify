@@ -10,6 +10,7 @@ namespace XPathSet
     {
         static void Main(string[] args)
         {
+            //setting the value of a given xml node or attribute here
         }
     }
 }
