@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPathVerify", "XPathVerify\XPathVerify.csproj", "{8A66AFC3-EF62-4FFD-A43C-BD6B85FB04F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPathSet", "XPathSet\XPathSet.csproj", "{58405BF2-A3D0-4606-81C1-55F4D38A8ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPathLib", "XPathLib\XPathLib.csproj", "{FE5EFBE9-3A0B-4627-ABF2-C38BAE9E1749}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8A66AFC3-EF62-4FFD-A43C-BD6B85FB04F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A66AFC3-EF62-4FFD-A43C-BD6B85FB04F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A66AFC3-EF62-4FFD-A43C-BD6B85FB04F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58405BF2-A3D0-4606-81C1-55F4D38A8ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58405BF2-A3D0-4606-81C1-55F4D38A8ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58405BF2-A3D0-4606-81C1-55F4D38A8ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58405BF2-A3D0-4606-81C1-55F4D38A8ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE5EFBE9-3A0B-4627-ABF2-C38BAE9E1749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5EFBE9-3A0B-4627-ABF2-C38BAE9E1749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5EFBE9-3A0B-4627-ABF2-C38BAE9E1749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5EFBE9-3A0B-4627-ABF2-C38BAE9E1749}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

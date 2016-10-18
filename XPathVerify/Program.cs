@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using XPathLib;
 
 namespace XPathVerify
 {
@@ -26,21 +27,10 @@ namespace XPathVerify
             var xPath = args[2];
 
             // 3: missing
-            var isMissing = args.Length > 3 ? args[3] : null;
+            bool? isMissing = args.Length > 3 ? bool.Parse(args[3]) : false;
 
-            var files = Directory.GetFiles(rootPath, wildcard, SearchOption.AllDirectories);
+            FileUtil.Do(rootPath, wildcard, xPath, isMissing, single);
 
-            foreach(var fileName in files)
-            {
-                var r = single(fileName, xPath);
-                if (string.IsNullOrWhiteSpace(isMissing) //all files of the type
-                    || (isMissing.ToLowerInvariant() == "y" && !r)
-                    || (isMissing.ToLowerInvariant() == "n" && r))
-                    if (string.IsNullOrWhiteSpace(isMissing))
-                        Console.WriteLine($"Found:{(r ? "y" : "n")} >>> {fileName}");
-                    else
-                        Console.WriteLine(fileName);
-            }
         }
 
         static bool single(string fullFilePath, string xPath)
